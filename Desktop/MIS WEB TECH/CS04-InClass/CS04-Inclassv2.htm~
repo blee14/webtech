@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+	    <title>CS04 InClass</title>
+        <style type="text/css">
+        
+        
+        
+        
+        
+        </style>
+        
+    </head>
+
+    <body>
+	<map name = "middleSex">
+
+	<area shape="rect" coords="301, 351, 330, 383" 
+			href="http://www.wellesleyma.gov/" 
+			alt="Wellesley" 
+			title="Wellesley"
+			target="_blank"/> 
+				
+	<area shape="rect" coords="338, 314, 360, 373" 
+			href="http://www.newtonma.gov/ 
+			alt="City of Newton" 
+			title="City of Newton"
+			target="_blank" />
+
+	<img src = "Images/Middlesex.gif" usemap = "#middleSex" 
+	     alt = "Map of Middlesex"
+	     title = "Map of Middlesex"/>
+        <h1></h1>
+   	
+
+    </body>
+</html>
