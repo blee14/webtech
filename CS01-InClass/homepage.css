@@ -7,6 +7,9 @@
 
 
 /*Button Navigation Controls Start*/
+@font-face { 
+    font-family: Roboto; src: url('roboto.ttf'); 
+    } 
 
 #name {
 	color:white;
@@ -17,6 +20,7 @@
 	color: white;
 	border-radius: 0em;
 	font-size: 1.2em;
+  font-family: Roboto;
 }
 
 
@@ -48,6 +52,7 @@
 	color: white;
 	border-radius: 0em;
 	font-size: 1.2em;
+  font-family: Roboto;
 }
 
 #mebtn:before {
@@ -78,6 +83,7 @@
 	color: white;
 	border-radius: 0em;
 	font-size: 1.2em;
+  font-family: Roboto;
 }
 
 #workbtn:before {
