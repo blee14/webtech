@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="homepage.css">
 
    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -10,6 +13,8 @@
 
 		<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script src="main.js"></script>
 
 	@fontface
 
@@ -25,6 +30,14 @@
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul id = "name" class=" nav navbar-nav navbar-left">
+	      		<li id = "fname" > 
+	      			<p> BRENDAN </p> 
+	      		</li>
+	      		<li id = "lname" > 
+	      			<p> LEE </p>
+	      		</li>
+	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
 	        <li>
 	        	<a id = "homebtn" href="#">
@@ -33,12 +46,12 @@
 	       		</a>
 	       	</li>
 	        <li>
-	        	<a id = "mebtn" href="#">
+	        	<a id = "mebtn" href="#aboutme">
 	        		A B O U T  M E
 	        	</a>
 	        </li>
 	        <li>
-	        	<a id = "workbtn" href="#">
+	        	<a id = "workbtn" href="#projects">
 	        		P R O J E C T S
 	        	</a>
 	        </li>
@@ -47,13 +60,38 @@
 	  </div><!-- /.container-fluid -->
 	</nav>
 
-	<div id="body">
-		<div>
+	<!-- This is the Body Section -->
 
+		<div id="title" class="slide header">
+		  <h1> </h1>
 		</div>
-			
+
+		<div id="slide1" class="slide">
+		  <div class="title">
+		    <h1> <a name = "aboutme"/> ABOUT ME </h1>
+		    <p> After around from California, Korea, and Hawaii I came to Babson College and joined the Class of 2016. Currently concentrating in IT manage but also an aspiring Network Security Engineer and Consultant. Created this website for the purpose of uploading my coursework and projects. My hobbies include dance, fashion, and designing. </p>
+		    	<div>
+		    	</div>
+		  </div>
 		</div>
-	</div>
+
+		<div id="slide2" class="slide">
+		  <div class="title">
+		    <h1> <a name = "projects" />Projects </h1>
+		    <p></p>
+		  </div>
+		</div>
+
+		<div id="slide3" class="slide">
+		  <div class="title">
+		    <h1> Course Work </h1>
+		    <p></p>
+		  </div>
+		</div>
+
+		<div id="slide4" class="slide header">
+		  <h1> Contact Me </h1>
+		</div>
 
 </body>
 </html>

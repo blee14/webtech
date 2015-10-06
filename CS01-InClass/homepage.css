@@ -10,6 +10,50 @@
 @font-face { 
     font-family: Roboto; src: url('roboto.ttf'); 
     } 
+#fname {
+  background: transparent;
+  border: 0;
+  color: white;
+  border-radius: 0em;
+  font-size: 1.2em;
+  font-family: Roboto;
+  margin-top: 0.5em;
+}
+
+#name:before {
+  content: "";
+  position: absolute;
+  width: 8%;
+  height: 0.1em;
+  bottom: 0;
+  left: 0;
+  margin-top: -3em;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  margin-left: 2em;
+}
+
+#name:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#lname {
+  background: transparent;
+  border: 0;
+  color: white;
+  border-radius: 0em;
+  font-size: 1.2em;
+  font-family: Roboto;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
 
 #name {
 	color:white;
@@ -111,6 +155,8 @@
 
 /* Button Navigation Controls End*/
 
+/* Body Content Starts Here */
+
 body{
 	background-color: #101010;
 	background-image: url("Assets/background.jpg");
@@ -126,4 +172,129 @@ body{
 }
 
 
+html {
+  height: 100%;
+  overflow: hidden;
+}
 
+body { 
+  margin:0;
+  padding:0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family
+}
+
+h1 {
+   font-size: 250%;
+   font-family: Roboto;
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: white;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.title {
+  width: 100%;
+  padding: 5% 10% 10% 10%;
+  font-family: Roboto;
+  border-radius: 5px;
+  background: #353535;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  color: white;
+
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background-image: url("Assets/background.jpg");
+   background-attachment: fixed;  
+}
+
+#slide1:before {
+  background-image: url("");
+  width: 50%;
+  height: 50%;
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide2 {
+  background-image: url("");
+  background-attachment: fixed;
+}
+
+#slide3:before {
+  background-image: url("");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide4 {
+  background: #222;
+}
+
+/* Body Content Ends Here */
