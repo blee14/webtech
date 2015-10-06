@@ -3,6 +3,9 @@
     background-color: #333333;
     margin-right: auto;
     margin-left: auto;
+    z-index: 0;
+    position: fixed;
+
 }
 
 
@@ -10,20 +13,21 @@
 @font-face { 
     font-family: Roboto; src: url('roboto.ttf'); 
     } 
+
 #fname {
   background: transparent;
   border: 0;
   color: white;
   border-radius: 0em;
   font-size: 1.2em;
-  font-family: Roboto;
+  font-family: "Light 300";
   margin-top: 0.5em;
 }
 
 #name:before {
   content: "";
   position: absolute;
-  width: 8%;
+  width: 9%;
   height: 0.1em;
   bottom: 0;
   left: 0;
@@ -34,7 +38,7 @@
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-  margin-left: 2em;
+  margin-left: 1.9em;
 }
 
 #name:hover:before {
@@ -49,7 +53,7 @@
   color: white;
   border-radius: 0em;
   font-size: 1.2em;
-  font-family: Roboto;
+  font-family: "Light 300";
   font-weight: bold;
   margin-top: 0.5em;
 }
@@ -64,7 +68,7 @@
 	color: white;
 	border-radius: 0em;
 	font-size: 1.2em;
-  font-family: Roboto;
+  font-family: "Light 300";
 }
 
 
@@ -154,6 +158,25 @@
 
 
 /* Button Navigation Controls End*/
+/* Button List on Body Starts Here */
+
+#btnlist {
+  padding: auto;
+  margin: auto;
+  width: 20%;
+}
+
+.mediabtn {
+  width: 2em;
+  height: 2em;
+  background-color: transparent;
+}
+
+.mediabtn2 {
+  width: 1.7em;
+  height: 1.7em;
+  background-color: transparent;
+}
 
 /* Body Content Starts Here */
 
@@ -161,6 +184,7 @@ body{
 	background-color: #101010;
 	background-image: url("Assets/background.jpg");
 	background-size: 100%;
+
 }
 
 .imgbox1 {
@@ -191,6 +215,7 @@ body {
 h1 {
    font-size: 250%;
    font-family: Roboto;
+
 }
 
 p {
@@ -211,22 +236,7 @@ p {
 
 }
 
-img {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  width: 320px;
-  height: 240px;
-  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
-  padding: 10px;
-  border-radius: 5px;
-  background: rgba(240,230,220, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-}
 
-img:last-of-type {
-  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
-}
 
 .slide:before {
   content: "";
