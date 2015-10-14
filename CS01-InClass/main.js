@@ -1,5 +1,5 @@
 // Init Skrollr
 var s = skrollr.init();
 
-s.refresh($('.homeSlide'));
+s.refresh($('.slide'));
 
