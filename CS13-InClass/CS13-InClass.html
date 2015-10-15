@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Javascript Demo in CS13 </title>
+
+	<script type="text/javascript">
+	function changeColor () {
+
+		var myTitle = document.getElementById('Brendan');
+		myTitle.style.color = "red";
+		myTitle.style.fontSize = "1em";
+
+
+	}
+
+	function calculate () {
+		var x = 2015;
+		var y = x + 1;
+		document.getElementById("x").innerHTML = x;
+	}
+	</script>
+
+</head>
+<body>
+
+	<h1 id="Brendan" onclick="changeColor()"> My first heading (click me!) </h1>
+
+	<p> y = <span id = "y"> ? </span></p>
+	<p> x = <span id = "x"> ? </span></p>
+	<p> The result is ?</p>
+	<button onclick="calculate()"> Click Me! </button>
+</body>
+</html>
