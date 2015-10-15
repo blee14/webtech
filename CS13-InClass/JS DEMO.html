@@ -14,9 +14,16 @@
 	}
 
 	function calculate () {
-		var x = 2015;
-		var y = x + 1;
+		var x = 5;
+		var y = 13;
 		document.getElementById("x").innerHTML = x;
+		document.getElementById("y").innerHTML = y;
+		document.getElementById("result").innerHTML = y%x;
+
+		var lastName = "Lee";
+		var firstName = "Brendan";
+		var name = firstName + lastName;
+		alert ("Welcome " + name);
 	}
 	</script>
 
@@ -28,6 +35,8 @@
 	<p> y = <span id = "y"> ? </span></p>
 	<p> x = <span id = "x"> ? </span></p>
 	<p> The result is ?</p>
-	<button onclick="calculate()"> Click Me! </button>
+	<p> The last digit of 2015 is <span id = "z"> ? </span></p>
+	<button onclick= calculate()> Click Me! </button>
+
 </body>
 </html>

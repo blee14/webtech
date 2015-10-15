@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>CS13-InClass</title>
+
+	<style type="text/css">
+	/* Your styles go here */
+	body {text-align:center;}
+	
+	</style>
+	<script type="text/javascript">
+
+	    function changeImage(id) {
+	    	var image = document.getElementById(id);
+	    	var w = image.width;
+	    	w = w*1.5;
+	    	image.width=w;
+	    }
+
+	    function defaultImage(id) {
+	    	var image = document.getElementById(id);
+	    	image.width=400;
+	    }
+
+
+
+
+	    
+
+	</script>
+  </head>
+
+  <body>
+	
+    <h2> Manipulating Styles and Images </h2>
+    
+    <p><img onmouseover="changeImage(this.id)" onmouseout="defaultImage(this.id)" id = "img" src="usa.png" alt="Image goes here" title ="map of USA" width="400"/></p>
+
+
+
+    <hr />
+
+    <p><img onmouseover="changeImage(this.id)" onmouseout="defaultImage(this.id)" id = "img2" src="globe.jpg" alt="Image goes here" title ="map of USA" width="400"/></p>
+ 
+
+
+  </body>
+</html>
