@@ -3,7 +3,7 @@
 	background-color: black;
 	padding-top: 20%;
 	padding-bottom: 20%;
-	height: 80%;
+	height: 20em;
 
 
 }
@@ -16,7 +16,8 @@
 	margin-right: auto;
 	background-color: silver;
 	width: 50%;
-	height: 50%;
+
+	padding: auto;
 
 }
 /*Table Title*/
@@ -119,5 +120,5 @@ td {
 /* Layer 3 */
 #beaver {
 	background: url("beaver.jpg");
-	height: 20%;
+	height: 10em;
 }
