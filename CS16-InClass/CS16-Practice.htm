@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+	    <script type="text/javascript">
+	    	function practiceHTM(one,two,three) {
+	    		var changeHead = document.getElementById("header");
+	    		var changeOne = document.getElementById("one");
+	    		var changeTwo = document.getElementById("two");
+	    		var changeThree = document.getElementById("three");
+
+	    		if (one == true) {
+	    			changeHead.innerHTML = "Practice Problem";
+					changeOne.style.color = "navy";
+	    			changeOne.style.fontFamily = "Lucida Handwriting";
+	    		}
+	    		if (two == true) {
+	    			changeHead.innerHTML = "Boring Stuff";
+					changeTwo.style.color = "red";
+	    			changeTwo.style.fontFamily = "Arial";
+	    		}
+	    		if (three == true) {
+	    			changeHead.innerHTML = "Don't know what I am doing";
+					changeThree.style.color = "olive";
+	    			changeThree.style.fontFamily = "Cursive";
+	    		}
+	    	} 
+	    </script>
+	    <title>CS16 - Practice</title>
+        
+    </head>
+
+    <body>
+	    <h1 id="header"> Change the Heading</h1>
+        
+        <h3 id="one" onclick="practiceHTM(true,false,false)"> a. Practice Problem</h3>
+        <h3 id="two" onclick="practiceHTM(false,true,false)"> b. Boring Stuff</h3>
+        <h3 id="three" onclick="practiceHTM(false,false,true)"> c. Don't know what I am doing</h3>
+
+        <p> WHen the user clicks on any one of the choices above, please change the title to the statement corresponding to that choice. For choice (a) set the font color to navy and the font to Lucida Handwriting. For (b), red and Arial and for (c) Olive and Cursive.
+        </p>
+        
+   
+    
+    </body>
+</html>
