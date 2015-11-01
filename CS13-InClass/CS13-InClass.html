@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Javascript Demo in CS13 </title>
+
+	<script type="text/javascript">
+	function changeColor () {
+
+		var myTitle = document.getElementById('Brendan');
+		myTitle.style.color = "red";
+		myTitle.style.fontSize = "1em";
+
+
+	}
+
+	function calculate () {
+		var x = 5;
+		var y = 13;
+		document.getElementById("x").innerHTML = x;
+		document.getElementById("y").innerHTML = y;
+		document.getElementById("result").innerHTML = y%x;
+
+		var lastName = "Lee";
+		var firstName = "Brendan";
+		var name = firstName + lastName;
+		alert ("Welcome " + name);
+	}
+	</script>
+
+</head>
+<body>
+
+	<h1 id="Brendan" onclick="changeColor()"> My first heading (click me!) </h1>
+
+	<p> y = <span id = "y"> ? </span></p>
+	<p> x = <span id = "x"> ? </span></p>
+	<p> The result is ?</p>
+	<p> The last digit of 2015 is <span id = "z"> ? </span></p>
+	<button onclick= calculate()> Click Me! </button>
+
+</body>
+</html>
