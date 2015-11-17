@@ -185,7 +185,7 @@ body {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  color: white;
+  /*color: white;*/
 }
 
 h1 {
@@ -218,8 +218,6 @@ p {
 
 }
 
-
-
 .slide:before {
   content: "";
   position: absolute;
@@ -231,10 +229,10 @@ p {
 
 .title {
   width: 100%;
-  padding: 5% 10% 10% 10%;
+  padding: 10% 10% 10% 10%;
   font-family: Roboto;
   border-radius: 5px;
-  background: #353535;
+/*  background: #353535;*/
   color: white;
 
 }
@@ -267,11 +265,26 @@ p {
   background-attachment: fixed;  
 }
 
+/* Social Media Button Start */
+
+#btnlist {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mediabtn {
+  height: 2em;
+  width: 2em;
+  margin: auto;
+}
+
+/* Social Media Button End */
+
 #slide1:before {
   background-image: url("Assets/Slide 2.jpg");
 
   transform: translateZ(-1px) scale(2);
   z-index:-1;
+  width: 120%;
 }
 
 #slide2 {
@@ -281,11 +294,20 @@ p {
 
 
 #slide3:before {
-  background-image: url("");
+  background-image: url("Assets/Slide 4.jpg");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
+  width: 120%;
 }
 
-#slide4 {
-  background: #222;
+/*Slide 3 Activity Buttons */
+.btn-custom {
+  margin-right: auto;
+  margin-left: auto;
 }
+
+
+/*#slide4 {
+  background: #222;
+  height: ;
+}*/
