@@ -1,8 +1,9 @@
-.navbar-custom {
+.navbar {
     color: #FFFFFF;
     background-color: #333333;
     margin-right: auto;
     margin-left: auto;
+    position: fixed;
 }
 
 
@@ -188,7 +189,7 @@ body {
   /*color: white;*/
 }
 
-h1 {
+.slideHeader {
    font-size: 250%;
    font-family: Lato;
    text-decoration: none;
@@ -206,26 +207,6 @@ p {
 #title {
   background-image: url("Slide1.jpg");
 }
-.slide {
-  position: relative;
-  padding: 25vh 10%;
-  margin-left: auto;
-  margin-right: auto;
-  min-height: 100vh;
-  width: 100%;
-  box-sizing: border-box;
-
-
-}
-
-.slide:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left:0;
-  right:0;
-}
 
 .title {
   width: 100%;
@@ -237,20 +218,6 @@ p {
 
 }
 
-.slide:nth-child(2n) .title {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slide:nth-child(2n+1) .title {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slide, .slide:before {
-  background: 50% 50% / cover;  
-}
-
 .header {
   text-align: center;
   font-size: 175%;
@@ -258,12 +225,6 @@ p {
   text-shadow: 0 2px 2px #000;
 }
 
-
-
-#title {
-  background-image: url("Assets/Slide1 v2.jpg");
-  background-attachment: fixed;  
-}
 
 /* Social Media Button Start */
 
@@ -279,35 +240,7 @@ p {
 
 /* Social Media Button End */
 
-#slide1:before {
-  background-image: url("Assets/Slide 2.jpg");
-
-  transform: translateZ(-1px) scale(2);
-  z-index:-1;
-  width: 120%;
+/* Body */
+#content {
+    padding-top: 50px;
 }
-
-#slide2 {
-  background-image: url("Assets/Slide 3.png");
-  background-attachment: fixed;
-}
-
-
-#slide3:before {
-  background-image: url("Assets/Slide 4.jpg");
-  transform: translateZ(-1px) scale(2);
-  z-index:-1;
-  width: 120%;
-}
-
-/*Slide 3 Activity Buttons */
-.btn-custom {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-
-/*#slide4 {
-  background: #222;
-  height: ;
-}*/

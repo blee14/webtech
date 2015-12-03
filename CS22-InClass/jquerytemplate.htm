@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+	    <title>JQuery Template File</title>
+        <style type="text/css">
+            
+
+        </style>
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#button1").click(function(){
+                    $("h1").css("color", "Red");
+                    $("p").text("NOTTTT");
+                    $("p").css("border", "3px solid black");
+                    $("this").text("something new");
+                });
+
+                $("#button2").click(function(){
+                    $("p").hide();
+                });
+
+                $("#button3").click(function(){
+                    $("p").show();
+                });
+
+                $("#button4").click(function(){
+                    $("p").toggle();
+                });
+
+
+            
+
+
+            });
+        </script>
+        
+    </head>
+
+    <body>
+	    <!-- Your HTML goes here -->
+        <h1> 32131 </h1>
+        <h2> jQuery </h2>
+        <p>
+            Chris is sexy
+        </p>
+        <button id = "button1"> Change </button>
+        <button id = "button2"> Hide </button>
+        <button id = "button3"> Show</button>
+        <button id = "button4"> Toggle </button>
+   
+    
+    </body>
+</html>

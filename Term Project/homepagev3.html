@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html ng-app = "myApp">
+    <head>
+        <meta charset="UTF-8">
+	<title>Brendan Personal Page v3  </title>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="sylesheet" type="text/css" href="animation.css">
+    
+        <!--    Angular     -->
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js'></script>
+        <script src='https://code.angularjs.org/1.4.8/angular-route.min.js'></script>
+
+                
+        <!--    JS Script   -->
+        <script src="index.js"></script>
+        <!-- BootStrap Script Start -->
+        
+        <!--  JQuery Script  -->
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+        <!-- BootStrap Script End -->
+    
+        
+        <!--    CSS Link    -->
+        
+        
+        <!-- Google Font Start -->
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <!--Google Font End -->
+    
+	</head>
+    <body>
+        <<header>
+		<nav class="navbar navbar-custom navbar-fixed-top">
+	  	<div class="container-fluid">
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul id = "name" class=" nav navbar-nav navbar-left">
+	      		<li id = "fname" > 
+	      			<p> BRENDAN </p> 
+	      		</li>
+	      		<li id = "lname" > 
+	      			<p> LEE </p>
+	      		</li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li>
+	        	<a id = "homebtn" href="#/">
+						H O M E
+					</button> <span class="sr-only">(current)</span>
+	       		</a>
+	       	</li>
+	        <li>
+	        	<a id = "mebtn" href="#/about">
+	        		A B O U T  M E
+	        	</a>
+	        </li>
+	        <li>
+	        	<a id = "workbtn" href="#/low">
+	        		L O W
+	        	</a>
+	        </li>
+	        <li>
+	        	<a id = "workbtn" href="#/deliverables">
+	        		D E L I V E R A B L E S
+	        	</a>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	</header>
+        <div id = "content" class = "container-fluid">
+            
+            <div ng-view></div>
+            
+        </div>
+
+
+<!--
+        <hr />
+            <pre>$location.path() = {{main.$location.path()}}</pre>
+            <pre>$route.current.templateUrl = {{main.$route.current.templateUrl}}</pre>
+            <pre>$route.current.params = {{main.$route.current.params}}</pre>
+            <pre>$routeParams = {{main.$routeParams}}</pre>            
+-->
+
+
+    </body>
