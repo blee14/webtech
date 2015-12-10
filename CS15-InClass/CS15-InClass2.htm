@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+
+<html> 
+
+<head>
+	<title> Practice Question CS15-InClass2 </title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<style type="text/css">
+	#add, #sub, #mul, #div, #clr {width:50px; height:30px;}
+	    form {
+	        background-color: silver;
+            
+	    }
+	    h1 {
+	        text-align: center;
+	    }
+	
+	</style>
+    <script type="text/javascript">
+        
+		function addition() {
+
+			var input1 = document.getElementById("num1").value;
+			var input2 = document.getElementById("num2").value;
+
+			var output1 = +input1 + +input2;
+			
+			document.getElementById("output").value = output1;
+
+			
+		}
+
+		function subtraction() {
+
+			var input1 = document.getElementById("num1").value;
+			var input2 = document.getElementById("num2").value;
+
+			var output1 = +input1 - +input2;
+			
+			document.getElementById("output").value = output1;
+
+			
+		}
+
+		function multiplication() {
+
+			var input1 = document.getElementById("num1").value;
+			var input2 = document.getElementById("num2").value;
+
+			var output1 = +input1 * +input2;
+			
+			document.getElementById("output").value = output1;
+
+			
+		}
+
+		function division() {
+
+			var input1 = document.getElementById("num1").value;
+			var input2 = document.getElementById("num2").value;
+
+			var output1 = +input1 / +input2;
+			
+			document.getElementById("output").value = output1;
+
+			
+		}
+
+		function clear() {
+			document.getElementById("num1").value = null;
+			document.getElementById("num2").value = null;
+			document.getElementById("output").value = null;
+			
+		}
+
+	
+	
+    </script>
+	
+</head>
+
+<body>
+
+<h1>The making of a small calculator </h1>
+<form action="" style="margin:30px 200px 30px 200px; padding: 40px 40px 40px 200px;">
+<p >Your Result: <input id = "output" type="text" name="result" size="10" /></p>
+<p>Number 1: <input id = "num1" type="text" name="num1" size="5" /> 
+Number 2: <input id = "num2" type="text" name="num2" size="5" /></p>
+<p>
+<input id = "add" onclick="addition()" type="button"  value="ADD"/>
+<input id = "subtract" onclick ="subtraction()" type="button" value="SUB" />
+<input id = "multiply" onclick ="multiplication()" type="button" value="MULT"/>
+<input id = "divide" onclick = "division()"type="button" value="DIV"/> <br /><br />
+<input onclick = "clear()"type="reset" id = "clr" value="Clear" name="reset" />
+</p>
+
+</form>
+	
+</body>
+</html>

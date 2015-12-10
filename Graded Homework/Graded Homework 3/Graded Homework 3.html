@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title> Graded Homework #3 </title>
+</head>
+<body>
+
+	<div >
+		<div id="top-background">
+				<p id = "table-head"> SOAP SURVEY</p>
+				<table id="main-table">
+					<tr class="table-content">
+						<td class="table-title"> Soap Image </td>
+						<td class="table-title"> Soap Color <br> Preference </br> </td>
+						<td class="table-title"> Soap Purchase <br> Intent </br> </td>
+						<td class="table-title"> Soap Features Liked </td>
+					</tr>
+					<tr class="table-content">
+						<td> 
+							<img class="img table-title" src="pearssoap.jpg">
+						</td>
+						<td class="radio" >
+							<p class="radio-text">
+				    		
+				    			<input type="radio" name="Green" value="green">
+				    			Green
+
+				    		</p>
+				    		<p class="radio-text">
+				    		
+				    			<input type="radio" name="Gold" value="gold">
+				    			Gold (stown)
+
+				    		</p>
+				    		<p class="radio-text">
+					    		
+					    		<input type="radio" name="Red" value="red">
+					    		Red
+
+				    		</p>
+						</td>
+						<td class="dropdown">
+							<p class="dropdown-label">
+								At $5.00\unit
+							</p>
+							<select name="purchaseintent">
+							  <option value="5">Definitely Buy</option>
+							  <option value="4">Likely Buy</option>
+							  <option value="3">Undecided</option>
+							  <option value="2">Unlikely Buy</option>
+							  <option value="1"> Not Buy</option>
+							</select>
+						</td>
+						<td>
+							<form>
+									<input type="checkbox" name="feature1" value="shape"> Shape
+								<br>
+									<input type="checkbox" name="feature2" value="size"> Size
+								<br>
+									<input type="checkbox" name="feature3" value="smell"> Smell 
+								<br>
+									<input type="checkbox" name="feature4" value="texture"> Texture 
+								<br>
+							</form>
+						</td>
+					</tr>
+					<tr class="table-content">
+						<td> 
+							<img class="img table-title" src="mysoresandalsoap.jpg">
+						</td>
+						<td class="radio">
+							<p class="radio-text">
+				    			<input type="radio" name="Ivory" value="green">
+				    			Ivory
+				    		</p>
+				    		<p class="radio-text">				    			
+				    			
+				    			<input type="radio" name="Sandal Wood (stown)" value="gold">
+				    			Sandal Wood (stown)
+
+				    		</p>
+				    		<p class="radio-text">
+					    		
+					    		<input type="radio" name="Pink" value="pink">
+					    		Pink
+
+				    		</p>
+						</td>
+						<td class="dropdown">
+							<p class="dropdown-label">
+								At $8.00\unit
+							</p>
+							<select name="purchaseintent">
+							  <option value="5">Definitely Buy</option>
+							  <option value="4">Likely Buy</option>
+							  <option value="3">Undecided</option>
+							  <option value="2">Unlikely Buy</option>
+							  <option value="1"> Not Buy</option>
+							</select>						
+						</td>
+						<td>
+							<form class="table-checkbox">
+									<input type="checkbox" name="feature1" value="shape"> Shape
+								<br>
+									<input type="checkbox" name="feature2" value="size"> Size
+								<br>
+									<input type="checkbox" name="feature3" value="smell"> Smell 
+								<br>
+									<input type="checkbox" name="feature4" value="texture"> Texture 
+								<br>
+							</form>
+						</td>
+					</tr>
+					<tr class="table-content">
+						<td id = "comments"colspan="4">
+							Tell us about yourself...
+						</td>
+					</tr>
+					<tr class="table-content">
+						<td> 
+
+								Gender: 
+						
+							<select name="gender">
+							  <option value="0">Male</option>
+							  <option value="1">Female</option>
+							</select>	
+						</td>
+						<td colspan="3">
+							<form>
+							  Age: (under 25 enter 1, 25-40 enter 2, else enter 3)
+							  <input type="number" name="agegroup" min="1" max="3" size: "5">
+							</form>
+						</td>
+					</tr>
+					<tr class="table-content">
+						<td colspan="2">
+							<form>
+							Your comments are welcome:
+							<br>
+							<input type="text" name="comment">
+						</td>
+						<td colspan="2">
+							<input id = "done-btn" type="button" onclick="" value="Done">
+							<input id = "oops-btn" type="button" onclick="" value="Oops" style="background-color:red">
+						</td>
+					</tr>
+
+				</table>
+		</div>		
+	</div>
+	<div id="beaver">
+		<br>
+		<br>
+		<br>
+		<br>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<<<<<<< HEAD
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>CS14-InClass</title>
+	<style type="text/css">
+	    h1 {text-align:center; font-family:Lucida Handwriting; font-weight:bold;}
+	    p {text-align:center; margin-top:50px;}
+	    img {border:15px ridge yellow; width:50%;}
+	</style>
+    <script type="text/javascript">
+       
+                
+    </script>
+</head>
+<body>
+    <h1> Changing Images Using User inputs - Click on Image below to start</h1>
+    <p>
+        <img  src="" alt="Click here to see the image of your choice" title="" />
+    </p>
+</body>
+</html>
+=======
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>CS14-InClass</title>
+	<style type="text/css">
+	    h1 {text-align:center; font-family:Lucida Handwriting; font-weight:bold;}
+	    p {text-align:center; margin-top:50px;}
+	    img {border:15px ridge yellow; width:50%;}
+	</style>
+    <script type="text/javascript">
+       
+       function changePicture () {
+
+            myVar = prompt("What kind of tree would you like to see?" + "(Options: Maple, Thyme, Clover, or Shamrock)");
+            
+            var changePic = document.getElementById("changeImage");
+
+            switch (myVar) {
+                case myVar="Thyme":
+                    changePic.src="thyme.jpg";
+                break;
+                case myVar="Maple":
+                    changePic.src="maple.jpg";
+                break;
+                case myVar="Clover":
+                    changePic.src="clover.jpg";
+                break;
+                case myVar="Shamrock":
+                    changePic.src="shamrock.jpg";
+                break;
+                default:
+                    alert("Please choose one of the following: Maple, Thyme, Clover, or Shamrock")
+            }
+
+           
+
+
+
+
+       }
+
+            
+                
+    </script>
+</head>
+<body>
+    <h1> Changing Images Using User inputs - Click on Image below to start</h1>
+    <p>
+
+        <img id = "changeImage" onclick="changePicture()" src="" alt="Click here to see the image of your choice" title="" />
+    </p>
+</body>
+</html>
+>>>>>>> d7e16a29202bc362849ee83d1564dd4f28e66b48

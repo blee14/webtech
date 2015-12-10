@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Graded Homework 2</title>
+	<style type="text/css">
+
+		table { 
+			border: 3px solid black;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			background-color: lightgray;
+			width: 70%;
+			font-family: Arial;
+			color: navy;
+
+		}
+
+		#labels {
+			background-color: yellow;
+			font-weight: bold;
+			text-align: center;
+			color: black;
+		}
+		td { border: 2px solid black;
+			text-align: center;
+			}
+
+		tr { border: 2px solid black;}
+
+		th {
+			font-style: italic;
+			background-color: white;
+			color: navy;
+			}
+		.gray {
+			background-color: lightgray;
+		}
+		.green {
+			background-color: lime;
+		}
+
+
+	</style>
+</head>
+<body>
+<table align="center">
+	<caption style="color:Navy; font-size: 30px; font-family: Arial;"> Exclusive Gifts for All Occasions </caption>
+	<tr>
+		<th colspan="4">
+			This is an exclusive vase from the Ming Dynasty.
+			<br> It is available in two sizes, with and without gold plating </br>
+		</th>
+
+	</tr>
+	<tr id="labels">
+		<td> Picture </td>
+		<td> Size </td>
+		<td> Plating </td>
+		<td> Price </td>
+	</tr>
+	<tr>
+		<td rowspan="4" id="picture" style="width:34%; padding-top: 10px; padding-bottom: 10px; "> 
+			<img src="ming.jpg">
+		</td>
+		<td rowspan="2" class="gray"> Small </td>
+		<td class="gray"> Without Plating </td>
+		<td class="gray"> $ 65.00 	</td>
+	</tr>
+	<tr class="green">
+		
+		<td> With Gold Plating </td>
+		<td> $ 165.00 </td>
+	</tr>
+	<tr class="gray">
+		<td rowspan="2"> Large </td>
+		<td> Without Plating</td>
+		<td> $ 265.00</td>
+	</tr>
+	<tr class="green">
+		<td> With Gold Plating </td>
+		<td> $ 565.00 </td>
+	</tr>
+</table>
+</body>
+</html>

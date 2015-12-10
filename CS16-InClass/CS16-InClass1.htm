@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+
+        
+        <script type="text/javascript">
+            
+
+            function showMe() {
+                var myForm = document.getElementById("form1");
+                var nameSave = myForm.name.value;
+                var ageSave = myForm.age.value;
+                var genderSave = myForm.gender.value; 
+
+
+
+                if (nameSave == "" || nameSave == "") {
+                    alert("You did not enter any values!");
+                }
+                else if (isNaN(ageSave)){
+                    alert("Enter a number in age");
+                }
+                else {
+                    myForm.result.value = "Name: " + nameSave + "\nAge: " + ageSave + "\nGender: " + genderSave;
+                }
+                return false;
+            }
+        </script>
+
+
+	    <title>CS16-Processing Form Inputs</title>
+        <style type="text/css">
+            form {margin-left:200px; margin-right:200px; padding:30px;
+                  font-family:Arial; font-weight:bold; background-color:Silver;}
+            h1 {text-align:center; font-family: Arial Baltic;}
+        </style>
+        
+    </head>
+
+    <body>
+	    <!-- Your HTML goes here -->
+        
+        <h1>Processing form inputs</h1>
+        <form id = "form1" action="" method="post">
+            <p>
+                Enter your name: <input type="text" id = "nameInput" name="name" size="40" /> 
+                Enter your age : <input type="text" id = "ageInput" name="age" size="4" />
+            </p>
+            <p> 
+                Select your gender: 
+                <select name="gender">
+                    <option value="Female"> Female </option>
+                    <option value="Male"> Male </option>
+                </select>
+            </p>
+            <p> 
+                Your selections will appear here: <br />
+                <textarea name="result" cols="40" rows="3"></textarea>
+            </p>
+            <p>
+                <input onclick = "showMe()" type="submit" name="submit" value="Show Me" style="width:100px;height:40px" />
+                <input type="reset" name="reset" value="Clear Me" style="width:100px;height:40px" />
+                <input type="button" onclick="showMe()" value="Show Me Here!"/>
+            
+            </p>
+
+        </form>
+    
+    </body>
+</html>
